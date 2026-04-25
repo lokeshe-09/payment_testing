@@ -12,8 +12,8 @@ import {
   Info
 } from 'lucide-react';
 
-const UPI_ID = 'aicrfatalchemy@upi';
-const RECIPIENT_NAME = 'Alchemy';
+const UPI_ID = 'aicraftalchemy@upi';
+const RECIPIENT_NAME = 'Alchemy AI Research';
 
 interface PaymentApp {
   id: string;
@@ -89,13 +89,9 @@ export default function UPIPayment() {
           <div className="flex flex-col">
             <span className="text-xs uppercase tracking-widest opacity-60 font-medium">Paying To</span>
             <h1 className="text-2xl font-bold tracking-tight mt-1">{RECIPIENT_NAME}</h1>
-            <button 
-              onClick={handleCopy}
-              className="flex items-center gap-2 text-sm opacity-80 mt-1 hover:opacity-100 transition-opacity group"
-            >
-              <span className="font-mono">{UPI_ID}</span>
-              {copied ? <Check size={14} className="text-emerald-400" /> : <Copy size={14} className="group-hover:scale-110 transition-transform" />}
-            </button>
+            <div className="flex items-center gap-2 text-sm opacity-60 mt-1">
+              <span className="font-medium tracking-wide">Secure Transaction Enabled</span>
+            </div>
           </div>
           <div className="w-14 h-14 bg-indigo-500 rounded-2xl flex items-center justify-center shadow-lg shadow-indigo-500/30">
             <ShieldCheck className="w-8 h-8 text-white" />
