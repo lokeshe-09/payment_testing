@@ -1,0 +1,6 @@
+{
+  "name": "Alchemy UPI Payments",
+  "description": "Secure and fast UPI payment gateway for Alchemy services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
